@@ -6,6 +6,7 @@ body {
   font-size: 20px;
   color: grey;
   cursor: default;
+  transform: translateX(-500px);
 }
 
 .welcome {
