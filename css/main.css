@@ -2,6 +2,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.welcome {
+  height: 100vh;
+}
+
 .navbar-light .navbar-brand {
   font-size: 20px;
   color: grey;
@@ -9,11 +13,11 @@ body {
   transform: translateX(-500px);
 }
 
-.welcome {
+.welcome-main {
   background: url("../images/macbook-pro-screen.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 700px;
+  height: 100vh;
   margin-top: 50px;
 }
 
