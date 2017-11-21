@@ -6,6 +6,20 @@ body {
   font-size: 30px;
 }
 
-.nav-link {
-  color: grey;
+.welcome {
+  background: url("../images/macbook-pro-screen.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  margin-top: 50px;
+}
+
+.code {
+  color: white;
+  height: 75%;
+  margin-top: 60px;
+}
+
+.code h2 {
+  margin-top: 10px;
 }
