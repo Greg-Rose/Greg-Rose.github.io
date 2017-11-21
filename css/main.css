@@ -1,0 +1,11 @@
+body {
+  font-family: 'Eczar', serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.nav-link {
+  color: grey;
+}
