@@ -12,8 +12,8 @@ body {
 .welcome hr {
   background-color: #dbdbdb;
   animation-duration: 4s;
-  /*animation-iteration-count: infinite;
-  animation-direction: alternate;*/
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   animation-name: slide;
   border: none;
   height: 1px;

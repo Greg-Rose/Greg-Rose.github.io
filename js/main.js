@@ -15,4 +15,10 @@ $(document).ready(function() {
       easing: "easeInOutQuad",
       duration: 2000
     });
+
+  $("#skills-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $(".skills").offset().top}, 1000
+    );
+  });
 });
