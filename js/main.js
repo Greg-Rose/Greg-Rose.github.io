@@ -1,29 +1,18 @@
 $(document).ready(function() {
-  var navTimeline = anime.timeline();
-
-  navTimeline
+  anime.timeline({loop: true})
     .add({
-      targets: '.navbar-brand',
-      translateX: [-500, 0],
-      easing: 'easeOutExpo',
-      duration: 1000
+      targets: '.line',
+      scaleX: [0,1],
+      opacity: [0.5,1],
+      easing: "easeInOutQuad",
+      duration: 2000,
+      offset: 500
     })
     .add({
-      targets: '#nav-link-1',
-      translateX: [500, 0],
-      easing: 'easeOutExpo',
-      offset: '-=500'
-    })
-    .add({
-      targets: '#nav-link-2',
-      translateX: [500, 0],
-      easing: 'easeOutExpo',
-      offset: '-=500'
-    })
-    .add({
-      targets: '#nav-link-3',
-      translateX: [500, 0],
-      easing: 'easeOutExpo',
-      offset: '-=500'
+      targets: '.line',
+      scaleX: [1,0],
+      opacity: [0.5,1],
+      easing: "easeInOutQuad",
+      duration: 2000
     });
 });
