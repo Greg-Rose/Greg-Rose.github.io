@@ -3,6 +3,9 @@ body {
 }
 
 .welcome {
+  background: url("../images/cityscape-bg.jpg");
+  background-size: cover;
+  color: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@ body {
   left: 0;
   height: 1px;
   width: 100%;
-  background-color: black;
+  background-color: #fff;
   transform-origin: 0 100;
   bottom: 0;
 }
