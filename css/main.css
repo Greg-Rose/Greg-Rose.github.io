@@ -144,7 +144,7 @@ body {
 }
 
 .project-item:hover > .overlay {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .text-overlay {
@@ -180,4 +180,24 @@ body {
 .text-overlay a:hover {
   color: grey;
   text-decoration: none;
+}
+
+/* About Section */
+
+.about {
+  background: #333333;
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about h2 {
+  color: white;
+  margin-top: 90px;
+}
+
+.about hr {
+  background-color: #8c8c8c;
+  margin-bottom: 40px;
+  width: 200px;
 }
