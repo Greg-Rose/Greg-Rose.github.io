@@ -1,7 +1,7 @@
 $(document).ready(function() {
   anime.timeline({loop: true})
     .add({
-      targets: '.line',
+      targets: '.welcome .line',
       scaleX: [0,1],
       opacity: [0.5,1],
       easing: "easeInOutQuad",
@@ -9,9 +9,9 @@ $(document).ready(function() {
       offset: 500
     })
     .add({
-      targets: '.line',
+      targets: '.welcome .line',
       scaleX: [1,0],
-      opacity: [0.5,1],
+      opacity: [1,0.5],
       easing: "easeInOutQuad",
       duration: 2000
     });
@@ -26,5 +26,29 @@ $(document).ready(function() {
     $('html, body').animate({
       scrollTop: $(".projects").offset().top}, 1000
     );
+  });
+
+  var projectsLine = anime.timeline({loop: true, autoplay: false});
+
+  projectsLine.add({
+      targets: '.projects .line',
+      scaleX: [0,0.7],
+      opacity: [0.5,1],
+      easing: "easeInOutQuad",
+      duration: 2000,
+      offset: 500
+    })
+    .add({
+      targets: '.projects .line',
+      scaleX: [0.7,0],
+      opacity: [1,0.5],
+      easing: "easeInOutQuad",
+      duration: 2000
+    });
+
+  $(".project-item").hover(function() {
+    projectsLine.restart();
+  }, function() {
+    projectsLine.pause();
   });
 });
