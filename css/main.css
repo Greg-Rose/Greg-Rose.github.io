@@ -84,6 +84,12 @@ body {
   margin-top: 50px;
 }
 
+.skills hr {
+  background-color: #8c8c8c;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
 .skills svg {
   margin: 40px 40px;
   max-width: 160px;
@@ -104,9 +110,13 @@ body {
 }
 
 .projects h2 {
-  margin-top: 50px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 90px;
+}
+
+.projects hr {
+  background-color: rgba(0,0,0,.1);
+  margin-bottom: 40px;
+  width: 300px;
 }
 
 .project-item {
