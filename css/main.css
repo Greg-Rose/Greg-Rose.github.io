@@ -1,0 +1,121 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+/* Welcome (top) Section */
+
+.welcome {
+  background: url("../images/cityscape-bg.jpg");
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome hr {
+  animation-duration: 4s;
+  animation-name: slide;
+  background-color: #dbdbdb;
+  border: none;
+  height: 1px;
+}
+
+@keyframes slide {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.welcome h1, .welcome h3, .welcome h4 {
+  font-weight: 200;
+}
+
+.text-wrapper {
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  position: relative;
+}
+
+.welcome-main {
+  padding-bottom: 100px;
+}
+
+.buttons {
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button-separator {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.line {
+  background-color: #fff;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  transform-origin: 0 100;
+  width: 100%;
+}
+
+/* Skills Section */
+
+.skills {
+  background: #333333;
+  min-height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.skills h2 {
+  color: white;
+  margin-top: 50px;
+}
+
+.skills svg {
+  margin: 40px 40px;
+  max-width: 160px;
+}
+
+/* Projects Section */
+
+.projects {
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.projects h2 {
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.project-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.project-item:hover > .overlay {
+    background-color: #000;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
