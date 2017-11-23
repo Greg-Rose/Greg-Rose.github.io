@@ -89,6 +89,12 @@ body {
   max-width: 160px;
 }
 
+@media (max-width: 767px) {
+  .skills svg {
+    max-width: 80px;
+  }
+}
+
 /* Projects Section */
 
 .projects {
