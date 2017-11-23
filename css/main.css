@@ -52,6 +52,10 @@ body {
   margin-top: 50px;
 }
 
+.buttons:hover {
+  color: grey;
+}
+
 .button-separator {
   font-size: 1.5rem;
   padding-left: 10px;
@@ -129,9 +133,40 @@ body {
     display: block;
     height: 100%;
     left: 0;
-    opacity: 0.7;
+    opacity: 0.9;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 100;
+}
+
+.text-overlay {
+  color: #fff;
+  display: none;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top:50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+}
+
+.project-item:hover > .text-overlay {
+  display: block;
+  z-index: 200;
+}
+
+.text-overlay p {
+  margin-top: 20px;
+}
+
+.text-overlay a {
+  color: #fff;
+  margin: 0 20px;
+  font-style: italic;
+}
+
+.text-overlay a:hover {
+  color: grey;
+  text-decoration: none;
 }
