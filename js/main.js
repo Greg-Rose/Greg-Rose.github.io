@@ -28,6 +28,12 @@ $(document).ready(function() {
     );
   });
 
+  $("#about-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $(".about").offset().top}, 1000
+    );
+  });
+
   var projectsLine = anime.timeline({loop: true, autoplay: false});
 
   projectsLine.add({
