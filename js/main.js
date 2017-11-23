@@ -21,4 +21,10 @@ $(document).ready(function() {
       scrollTop: $(".skills").offset().top}, 1000
     );
   });
+
+  $("#projects-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $(".projects").offset().top}, 1000
+    );
+  });
 });
