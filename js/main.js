@@ -28,6 +28,12 @@ $(document).ready(function() {
     );
   });
 
+  $("#about-btn").click(function() {
+    $('html, body').animate({
+      scrollTop: $(".about").offset().top}, 1000
+    );
+  });
+
   var projectsLine = anime.timeline({loop: true, autoplay: false});
 
   projectsLine.add({
@@ -51,4 +57,7 @@ $(document).ready(function() {
   }, function() {
     projectsLine.pause();
   });
+
+  var contactform =  document.getElementById('contact-form');
+  contactform.setAttribute('action', 'https:' + '//formspree.io/' + 'gregrose628' + '@' + 'gmail' + '.' + 'com');
 });
