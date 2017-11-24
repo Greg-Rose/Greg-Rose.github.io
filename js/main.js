@@ -60,4 +60,8 @@ $(document).ready(function() {
 
   var contactform =  document.getElementById('contact-form');
   contactform.setAttribute('action', 'https:' + '//formspree.io/' + 'gregrose628' + '@' + 'gmail' + '.' + 'com');
+
+  window.sr = ScrollReveal({ origin: 'left', easing: 'ease' });
+  sr.reveal('.skill-svg', { duration: 1200, scale: 0.3 }, 100);
+  sr.reveal('.project-item', { duration: 1200, scale: 0.7 }, 300);
 });

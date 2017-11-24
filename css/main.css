@@ -219,6 +219,7 @@ body {
 
 .about-email button:hover {
   background-color: grey;
+  border-color: #666666;
 }
 
 .about-link {
