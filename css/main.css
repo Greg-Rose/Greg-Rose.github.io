@@ -77,7 +77,6 @@ body {
 
 .skills {
   background: #333333;
-  min-height: 100vh;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
@@ -108,7 +107,6 @@ body {
 /* Projects Section */
 
 .projects {
-  min-height: 100vh;
   padding-left: 20px;
   padding-right: 20px;
 }
