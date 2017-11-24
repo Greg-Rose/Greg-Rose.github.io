@@ -57,4 +57,7 @@ $(document).ready(function() {
   }, function() {
     projectsLine.pause();
   });
+
+  var contactform =  document.getElementById('contact-form');
+  contactform.setAttribute('action', 'https:' + '//formspree.io/' + 'gregrose628' + '@' + 'gmail' + '.' + 'com');
 });

@@ -192,16 +192,18 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4 about-email">
             <h5>Contact Me</h5>
-            <form method="POST" action="http://formspree.io/gregrose628@gmail.com">
+            <form method="POST" id="contact-form">
               <div class="form-group">
-                <input type="text" name="name" placeholder="Your name" class="form-control">
+                <input type="text" name="name" placeholder="Your name" class="form-control" required>
               </div>
               <div class="form-group">
-                <input type="email" name="email" placeholder="Your email" class="form-control">
+                <input type="email" name="email" placeholder="Your email" class="form-control" required>
               </div>
               <div class="form-group">
-                <textarea name="message" placeholder="Your message" class="form-control"></textarea>
+                <textarea name="message" placeholder="Your message" class="form-control" required></textarea>
               </div>
+              <input type="text" name="_gotcha" style="display:none" />
+              <input type="hidden" name="_subject" value="Email from Portfolio" />
               <button type="submit" class="btn btn-default">Send</button>
             </form>
           </div>
