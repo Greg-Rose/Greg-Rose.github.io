@@ -20,6 +20,7 @@ body {
   background-color: #dbdbdb;
   border: none;
   height: 1px;
+  width: 50%;
 }
 
 @keyframes slide {
@@ -27,7 +28,37 @@ body {
     width: 0%;
   }
   to {
-    width: 100%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 991px) {
+  .welcome hr {
+    width: 60%;
+  }
+
+  @keyframes slide {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .welcome hr {
+    width: 90%;
+  }
+
+  @keyframes slide {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 90%;
+    }
   }
 }
 
