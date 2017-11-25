@@ -16,22 +16,14 @@ $(document).ready(function() {
       duration: 2000
     });
 
-  $("#skills-btn").click(function() {
-    $('html, body').animate({
-      scrollTop: $(".skills").offset().top}, 1000
-    );
-  });
-
-  $("#projects-btn").click(function() {
-    $('html, body').animate({
-      scrollTop: $(".projects").offset().top}, 1000
-    );
-  });
-
-  $("#about-btn").click(function() {
-    $('html, body').animate({
-      scrollTop: $(".about").offset().top}, 1000
-    );
+  $(function() {
+    $('.buttons').bind('click', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('data-scroll')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+    });
   });
 
   var projectsLine = anime.timeline({loop: true, autoplay: false});
