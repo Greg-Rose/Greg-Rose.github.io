@@ -236,12 +236,18 @@ body {
   padding: 30px;
 }
 
-.about-text h4 {
+.about-text p {
   font-size: 1.3rem;
   font-weight: 200;
+  line-height: 1.2;
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 24px;
   text-align: left;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: .5rem;
 }
 
 .about-email textarea {
